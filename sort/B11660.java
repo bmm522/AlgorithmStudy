@@ -1,4 +1,4 @@
-package baekjoon.sort;
+package Algorithm.sort;
 
 import java.io.*;
 import java.util.*;
@@ -23,9 +23,7 @@ public class B11660 {
 
         for(int i = 1 ; i <= size ; i ++ ){
             for(int j = 1 ; j <= size ; j ++){
-
                     sumArr[i][j] = sumArr[i][j-1] + sumArr[i-1][j] - sumArr[i-1][j-1] + arr[i][j];
-
             }
         }
 
@@ -41,8 +39,6 @@ public class B11660 {
             sum += sumArr[x2][y2] - sumArr[x2][y1-1] - sumArr[x1-1][y2] + sumArr[x1-1][y1-1];
             bw.write(sum + "\n");
         }
-
-
 
         br.close();
         bw.flush();

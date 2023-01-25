@@ -1,9 +1,6 @@
-package baekjoon.sort;
+package Algorithm.sort;
 
 import java.io.*;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 import java.util.StringTokenizer;
 
 public class BJ_B3_2566_최댓값 {

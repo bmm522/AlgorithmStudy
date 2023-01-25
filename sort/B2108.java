@@ -1,4 +1,4 @@
-package baekjoon.sort;
+package Algorithm.sort;
 
 import java.io.*;
 import java.util.ArrayList;

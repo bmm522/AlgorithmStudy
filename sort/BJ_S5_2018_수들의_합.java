@@ -1,7 +1,6 @@
-package baekjoon.sort;
+package Algorithm.sort;
 
 import java.io.*;
-import java.util.Arrays;
 
 public class BJ_S5_2018_수들의_합 {
 
