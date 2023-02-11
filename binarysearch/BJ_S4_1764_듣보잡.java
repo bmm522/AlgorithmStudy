@@ -10,14 +10,12 @@ public class BJ_S4_1764_듣보잡 {
     static String[] strArr;
     static String[] strArr2;
     static int cnt;
-//    static BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
 
     static ArrayList<String> list = new ArrayList<>();
 
- //   static StringBuilder sb = new StringBuilder();
     public static void main(String[] args) throws IOException {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-//        BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(System.out));
+
 
         StringTokenizer stk = new StringTokenizer(br.readLine());
 
@@ -29,8 +27,6 @@ public class BJ_S4_1764_듣보잡 {
             strArr2 = new String[m];
 
 
-//        String[] strArr = new String[n];
-//        strArr2 = new String[m];
 
         for(int i = 0 ; i < n ; i ++){
             strArr[i] = br.readLine();
@@ -63,9 +59,9 @@ public class BJ_S4_1764_듣보잡 {
                 list.add(strArr);
                 return;
             }
-         if(lo >= hi){
-            return;
-          }
+            if(lo >= hi){
+                return;
+            }
             if(strArr.compareTo(strArr2[mid])< 0){
                 hi=mid-1;
                 binarySearch(strArr, lo, hi);
@@ -73,10 +69,6 @@ public class BJ_S4_1764_듣보잡 {
                 lo = mid +1;
                 binarySearch(strArr, lo, hi);
             }
-
-
-
-
 
 
     }
